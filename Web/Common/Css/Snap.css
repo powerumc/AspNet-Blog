@@ -1,0 +1,161 @@
+.TopGroup
+{
+  cursor:pointer; 
+  border: 0px;
+}
+
+.MenuGroup
+{
+  background-color:#F5F5F5;
+  border:1px #4E5358 solid; 
+  border-style:solid;
+  cursor:default; 
+}
+
+.MenuItem
+{
+  border: 1px solid #F5F5F5; 
+  color:#00025C;
+  font-family:tahoma; 
+  font-size:11px; 
+  cursor:default; 
+}
+
+.MenuItemHover 
+{
+  background-color:#FFEEC2; 
+  color: #333333;
+  border: 1px solid #57566F; 
+  border-top-color: #9190AC; 
+  border-left-color: #9190AC;
+  font-family:tahoma; 
+  font-size:11px; 
+  cursor:default; 
+}
+
+
+/*
+.SnapHeader
+{
+  color: #ffffff;
+  background-color: #757495;
+  background-image: url(/common/images/snap_headerBg.gif); 
+  border: 1px solid #57566F; 
+  font-family: Tahoma;
+  font-weight: bold;
+}
+*/
+
+.SnapHeader
+{
+  color: #ffffff;
+  background-color: #757495;
+  background-image: url(/common/images/snap_headerBg.gif); 
+  border: 1px solid #57566F; 
+  font-family: Tahoma;
+  font-weight: bold;
+}
+
+.SnapHeaderCollapsed
+{
+  color: #777777;
+  background-color: #E0DFE3;
+  background-image: url(/common/images/snap_headerCollapsedBg.gif);
+  border: 1px solid #777777; 
+  font-family: Tahoma;
+  font-weight: bold;
+}
+
+.SnapContent
+{
+  font-family: verdana;
+  font-size: 11px;
+  padding: 3px;
+  border: 1px solid #57566F;
+  border-top-width: 0px;
+  background-color: white;
+  cursor: default;
+}
+
+.Dock
+{
+  padding:5px;
+  border:#AFAFAF 1px solid; 
+  background-color:#D1D1D1;
+}
+
+.Links
+{
+  list-style-image:none;
+  color:Black;
+  font-size:11px;
+}
+
+#LeftColumn
+{
+	width:180px;
+}
+#RightColumn
+{
+	width:180px;
+}
+#CenterColumn
+{
+	width:740px;
+}
+
+/*
+/* [5] 테이블 스타일 정의 */
+#my_table1 
+{
+	border-top-width:1px; 
+	border-right-width:1px; 
+	border-bottom-width:1px; 
+	border-left-width:1px; 
+	border-top-color:black; 
+	border-bottom-color:black; 
+	border-right-color:black; 
+	border-left-color:black; 
+	border-bottom-style:solid; 
+	border-left-style:solid; 
+	border-right-style:solid;
+}
+
+
+
+/* Snap CSS Start
+.SnapHeader
+{
+  color: #ffffff;
+  background-color: #6699CC;
+  font-family: Tahoma;
+  font-weight: bold;
+  font-size: 12px;
+  padding-top: 2px;
+  padding-left: 5px;
+  filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=1, StartColorStr= '#003499' , EndColorStr= '#6698CB' );
+  cursor: move;
+}
+
+.snapHeaderClosed
+{
+  color: #ffffff;
+  background-color: #E8E9F1;
+  font-family: Tahoma;
+  font-weight: bold;
+  font-size: 12px;
+  padding-top: 2px;
+  padding-left: 5px;
+  filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=1, StartColorStr= 'black' , EndColorStr= '#E8E9F1' );
+  cursor: move;
+}
+
+.SnapContent
+{
+  font-family: 굴림체;
+  font-size: 11px;
+  padding: 3px;
+  border: #4284b5 1px solid;
+  background-color: white;
+}
+*/

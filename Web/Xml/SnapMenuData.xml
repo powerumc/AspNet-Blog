@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<SiteMap>
+	<item LookId="EmptyLook" Look-ImageUrl="all_windows.gif" Look-HoverImageUrl="all_windowsHover.gif" Look-ActiveImageUrl="all_windowsActive.gif" Look-ImageWidth="15" Look-ImageHeight="14" SubGroupExpandDirection="BelowRight" SubGroupExpandOffsetX="3">
+		<item Text="Page Options" ClientSideCommand="ToggleSnapMinimize(snap_Profile, 0);" />
+		<item Text="Categorys" ClientSideCommand="ToggleSnapMinimize(snap_Category, 1);" />
+		<item Text="Developer Tools" ClientSideCommand="ToggleSnapMinimize(Snap2, 1)" />
+		<item Text="About Web.UI" ClientSideCommand="ToggleSnapMinimize(Snap3, 2)" />
+		<item Text="Built for VS.NET" ClientSideCommand="ToggleSnapMinimize(Snap4, 3)" />
+	</item>
+</SiteMap>

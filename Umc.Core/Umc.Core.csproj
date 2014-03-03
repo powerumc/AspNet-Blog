@@ -1,0 +1,163 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7DC0386D-4A98-452A-BAED-6985BCB64952}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Umc.Core</RootNamespace>
+    <AssemblyName>Umc.Core</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ComponentArt.Web.UI, Version=2006.2.1507.3, Culture=neutral, PublicKeyToken=9bc9f846553156bb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Web\Bin\ComponentArt.Web.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions, Version=1.0.61025.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Authenticate\AuthenticateAccess.cs" />
+    <Compile Include="Authenticate\AuthenticateConst.cs" />
+    <Compile Include="Authenticate\Authenticator.cs" />
+    <Compile Include="Authenticate\UserInfo.cs" />
+    <Compile Include="Authenticate\UserInfoBindModel.cs" />
+    <Compile Include="Data\AbstractDataAccess.cs" />
+    <Compile Include="Data\RepositoryAccess.cs" />
+    <Compile Include="Data\RepositoryManager.cs" />
+    <Compile Include="Logger\LoggerAccess.cs" />
+    <Compile Include="Logger\LoggerManager.cs" />
+    <Compile Include="Logger\Model\ConnectionLogModel.cs" />
+    <Compile Include="MessageCode.cs" />
+    <Compile Include="Modules\Article\ArticleAccess.cs" />
+    <Compile Include="Modules\Article\ArticleConst.cs" />
+    <Compile Include="Modules\Article\ArticleManager.cs" />
+    <Compile Include="Modules\Article\Model\ArticleBindModel.cs" />
+    <Compile Include="Modules\Article\Model\ArticleModel.cs" />
+    <Compile Include="Modules\Article\Model\AttachFileBindModel.cs" />
+    <Compile Include="Modules\Article\Model\AttachFileModel.cs" />
+    <Compile Include="Modules\Article\Model\TagBindModel.cs" />
+    <Compile Include="Modules\Article\Model\TagModel.cs" />
+    <Compile Include="Modules\Blog\BlogAccess.cs" />
+    <Compile Include="Modules\Blog\BlogConst.cs" />
+    <Compile Include="Modules\Blog\BlogManager.cs" />
+    <Compile Include="Modules\Blog\Model\BlogBaseModel.cs" />
+    <Compile Include="Modules\Blog\Model\BlogModel.cs" />
+    <Compile Include="Modules\Blog\Model\PrivacyModel.cs" />
+    <Compile Include="Modules\Blog\Model\ProfileInfoModel.cs" />
+    <Compile Include="Modules\Breaker\BreakerAccess.cs" />
+    <Compile Include="Modules\Breaker\BreakerManger.cs" />
+    <Compile Include="Modules\Breaker\BreakerConst.cs" />
+    <Compile Include="Modules\Breaker\Model\BreakerModel.cs" />
+    <Compile Include="Modules\Category\CategoryAccess.cs" />
+    <Compile Include="Modules\Category\CategoryManager.cs" />
+    <Compile Include="Modules\Category\Model\CategoryLCode.cs" />
+    <Compile Include="Modules\Category\Model\CategoryListBox.cs" />
+    <Compile Include="Modules\Category\Model\CategoryModel.cs" />
+    <Compile Include="Modules\Category\Model\CategoryNodeValue.cs" />
+    <Compile Include="Modules\Category\Model\CategoryTreeView.cs" />
+    <Compile Include="Modules\Category\Model\ICategory.cs" />
+    <Compile Include="Modules\Comment\CommentAccess.cs" />
+    <Compile Include="Modules\Comment\CommentConst.cs" />
+    <Compile Include="Modules\Comment\CommentManager.cs" />
+    <Compile Include="Modules\Comment\Model\CommentBindModel.cs" />
+    <Compile Include="Modules\Comment\Model\CommentModel.cs" />
+    <Compile Include="Modules\Emoticon\EmoticonAccess.cs" />
+    <Compile Include="Modules\Emoticon\EmoticonConst.cs" />
+    <Compile Include="Modules\Emoticon\EmoticonManager.cs" />
+    <Compile Include="Modules\Emoticon\Model\EmoticonModel.cs" />
+    <Compile Include="Modules\IManager.cs" />
+    <Compile Include="Modules\Rss\IRss.cs" />
+    <Compile Include="Modules\Rss\Model\RssItemBindModel.cs" />
+    <Compile Include="Modules\Rss\Model\RssItemModel.cs" />
+    <Compile Include="Modules\Rss\Model\RssModel.cs" />
+    <Compile Include="Modules\Rss\Model\RssModel20.cs" />
+    <Compile Include="Modules\Rss\RssManager.cs" />
+    <Compile Include="Modules\Snap\SnapConst.cs" />
+    <Compile Include="Modules\Snap\SnapManager.cs" />
+    <Compile Include="Modules\Snap\SnapModel\SnapModel.cs" />
+    <Compile Include="Modules\Snap\SnapXml.cs" />
+    <Compile Include="Modules\Stat\StatAccess.cs" />
+    <Compile Include="Modules\Stat\StatManager.cs" />
+    <Compile Include="Modules\Trackback\Model\TrackbackModel.cs" />
+    <Compile Include="Modules\Trackback\TrackbackAccess.cs" />
+    <Compile Include="Modules\Trackback\TrackbackConst.cs" />
+    <Compile Include="Modules\Trackback\TrackbackManager.cs" />
+    <Compile Include="Parameters.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UmcConfiguration.cs" />
+    <Compile Include="UmcDataException.cs" />
+    <Compile Include="UmcException.cs" />
+    <Compile Include="Util\Utility.cs" />
+    <Compile Include="WebAdmin\Sitemap\ISitemap.cs" />
+    <Compile Include="WebAdmin\Sitemap\ModuleGroup.cs" />
+    <Compile Include="WebAdmin\Sitemap\ModuleInfo.cs" />
+    <Compile Include="WebAdmin\Sitemap\Sitemap.cs" />
+    <Compile Include="WebAdmin\Sitemap\SitemapManager.cs" />
+    <Compile Include="WebAdmin\Sitemap\SItemapModule.cs" />
+    <Compile Include="WebAdmin\Sitemap\Sitemap_Node.cs" />
+    <Compile Include="WebAdmin\WebAdminCommonTemplate.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebAdmin\WebAdminManager.cs" />
+    <Compile Include="WebAdmin\WebAdminTemplate.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\Controls\ArticleContent.ascx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\Controls\CommentContent.ascx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\Controls\MessageContent.ascx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\Controls\UmcPager.cs" />
+    <Compile Include="Web\Controls\UmcPagerDesigner.cs" />
+    <Compile Include="Web\Controls\전화번호.cs" />
+    <Compile Include="Web\Controls\주민번호.cs" />
+    <Compile Include="Web\UmcBasePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\UmcConfigurationFileAttributeHandler.cs" />
+    <Compile Include="Web\UmcConfigurationSectionHandler.cs" />
+    <Compile Include="Web\UmcContentsCommonPage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\UmcHttpModule.cs" />
+    <Compile Include="Web\UmcMarkImageHandler.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

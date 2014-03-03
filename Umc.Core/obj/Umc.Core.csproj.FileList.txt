@@ -1,0 +1,6 @@
+obj\Debug\ResolveAssemblyReference.cache
+bin\Debug\Umc.Core.dll
+bin\Debug\Umc.Core.pdb
+obj\Debug\Umc.Core.dll
+obj\Debug\Umc.Core.pdb
+bin\Debug\ComponentArt.Web.UI.dll

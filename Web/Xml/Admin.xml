@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<admin id="ADMIN1"  path="WebAdmin">
+	<title>블로그 관리자></title>
+	<initParams>
+		<param name="page.admin.login">/Common/Login.aspx?returnUrl=/WebAdmin</param>
+		<param name="page.user.login">/Common/Login.aspx?returnUrl=/</param>
+		<param name="page.breaker">/Common/Breaker.umcx</param>
+	</initParams>	
+	<moduleGroup id="MG1"  path="01Blog">
+		<title>기본 설정 관리</title>
+		<module id="UBI1" viewControl="/WebAdmin/01Blog/BlogBaseInfo.ascx">
+			<title>블로그 기본 정보</title>
+			<initParams>
+				<param name="umc">Umc</param>
+				<param name="umc1">Umc1</param>
+			</initParams>
+		</module>
+		<module id="UBI2" viewControl="/WebAdmin/01Blog/ProfileInfo.ascx">
+			<title>프로필 기본정보 관리</title>
+		</module>
+	</moduleGroup>
+	<moduleGroup id="MG2" path="02Privacy">
+		<title>프라이버시 관리</title>
+		<module id="UP1" viewControl="/WebAdmin/02Privacy/Privacy.ascx">
+			<title>프라이버시 관리</title>
+		</module>
+	</moduleGroup>
+	<moduleGroup id="MGMENU" path="04Menu">
+		<title>메뉴 관리</title>
+		<module id="MGMENU1" viewControl="/WebAdmin/04Menu/EditCategory.ascx">
+			<title>카테고리 관리</title>
+		</module>
+	</moduleGroup>
+	<moduleGroup id="MGArticle" path="05Article">
+		<title>아티클 관리</title>
+		<module id="MGArticleWrite" viewControl="/WebAdmin/05Article/Templates/ArticleWrite.ascx">
+			<title>아티클 쓰기</title>
+		</module>
+		<module id="MGArticleManager" viewControl="/WebAdmin/05Article/Controls/ArticleControl.ascx">
+			<title>아티클 관리</title>
+			<initParams>
+				<param name="template.list">/Webadmin/05Article/Templates/ArticleList.ascx</param>
+				<param name="template.write">/Webadmin/05Article/Templates/ArticleWrite.ascx</param>
+				<param name="template.view">/Webadmin/05Article/Templates/ArticleView.ascx</param>
+			</initParams>
+		</module>
+	</moduleGroup>
+	<moduleGroup id="MGTAG" path="03Tag">
+		<title>태그관리</title>
+		<module id="MGTAGCLOUD" viewControl="/WebAdmin/03Tag/TagCloud.ascx">
+			<title>태그 구름</title>
+		</module>
+		<module id="MGTAG1" viewControl="/WebAdmin/03Tag/RemoveTag.ascx">
+			<title>태그 삭제 관리</title>
+		</module>
+	</moduleGroup>
+	<moduleGroup id="MGMEMBER" path="06Member">
+		<title>회원 관리</title>
+		<module id="MGMemberManager" viewControl="/WebAdmin/06Member/Controls/MemberControl.ascx">
+			<title>회원관리</title>
+			<initParams>
+				<param name="template.list">/WebAdmin/06Member/Templates/MemberList.ascx</param>
+			</initParams>
+		</module>
+	</moduleGroup>
+	<moduleGroup id="MGEMOTICON" path="07Emoticon">
+		<title>이모티콘</title>
+		<module id="MGEmoticonManager" viewControl="/WebAdmin/07EMoticon/Controls/EmoticonControl.ascx">
+			<title>이모티콘 관리</title>
+			<initParams>
+				<param name="template.list">/WebAdmin/07Emoticon/Templates/EmoticonList.ascx</param>
+				<param name="template.popup">/WebAdmin/07Emoticon/Templates/EmoticonRegistPopup.aspx</param>
+			</initParams>
+		</module>
+	</moduleGroup>
+	<moduleGroup id="MGSTAT" path="08Stat">
+		<title>블로그 통계</title>
+		<module id="MGSTATConnectionLog" viewControl="/WebAdmin/08Stat/Controls/StatControl.ascx">
+			<title>접속 로그</title>
+			<initParams>
+				<param name="template.list">/WebAdmin/08Stat/Templates/ConnectionLogList.ascx</param>
+			</initParams>
+		</module>
+		<module id="MGBreaker" viewControl="/WebAdmin/09Breaker/Controls/BreakerControl.ascx">
+			<title>차단 목록</title>
+			<initParams>
+				<param name="template.list">/WebAdmin/09Breaker/Templates/BreakerList.ascx</param>
+				<param name="template.popup">/WebAdmin/09Breaker/Templates/BreakerRegistPopup.aspx</param>
+			</initParams>
+		</module>
+	</moduleGroup>
+</admin>

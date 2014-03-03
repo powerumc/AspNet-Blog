@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<snap>
+	<module id="Profile" viewControl="/Common/Snap/Templates/SnapProfile.ascx" contentControl="/common/snap/contents/ProfileContent.ascx" />
+	<module id="Category" viewControl="/Common/Snap/Templates/SnapCategory.ascx" contentControl="/common/snap/contents/CategoryContent.ascx" />
+	<module id="RecentComment" viewControl="/common/snap/templates/SnapRecentComment.ascx" />
+	<module id="RecentArticle" viewControl="/common/snap/templates/SnapRecentArticle.ascx" />
+	<module id="BlogInfo" viewControl="/common/snap/templates/SnapBlogInfo.ascx" />
+	
+	<!-- 모든 페이지가 동적으로 랜더링이 되기 위한 컨트롤...
+		 설계상 문제점으로 사용하지 않는다.
+	<module id="Content" viewControl="/Common/Snap/Templates/SnapContent.ascx"></module>
+	-->
+	<module id="Calendar" viewControl="/Common/Snap/Templates/SnapCalendar.ascx" />
+	<module id="Tag" viewControl="/Common/Snap/Templates/SnapTag.ascx" />
+
+	<module id="UserJoin" contentControl="/common/snap/contents/UserJoinContent.ascx" />
+	<module id="Article" contentControl="/common/snap/contents/ArticleContent.ascx" />
+	<module id="ArticleList" contentControl="/common/snap/contents/ArticleListContent.ascx" />
+	<module id="TagList" contentControl="/common/snap/contents/TagList.ascx" />
+	<module id="Message" contentControl="/common/snap/contents/MessageContent.ascx" />
+	<module id="GuestBoard" contentControl="/common/snap/contents/GuestBoardContent.ascx" />
+</snap>

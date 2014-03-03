@@ -1,0 +1,20 @@
+﻿<%@ Page Language="C#" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<script runat="server">
+
+</script>
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>제목 없음</title>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div style="width:100%;text-align:center;">
+		접속하신 사용자의 IP 는 관리자에 의해 차단 되었습니다.
+    </div>
+    </form>
+</body>
+</html>
