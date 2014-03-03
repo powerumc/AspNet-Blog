@@ -1,0 +1,60 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "http://localhost:9091/", "http://localhost:9091", "{437C7762-43B2-4306-B3CF-8EF73DA19397}"
+	ProjectSection(WebsiteProperties) = preProject
+		ProjectReferences = "{7DC0386D-4A98-452A-BAED-6985BCB64952}|Umc.Core.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/localhost:9090"
+		Debug.AspNetCompiler.PhysicalPath = "D:\Work\Web\UmcBlog\Web\"
+		Debug.AspNetCompiler.TargetPath = "C:\Documents and Settings\Administrator\My Documents\Visual Studio 2005\Projects\localhost\PrecompiledWeb\localhost:9090\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost:9090"
+		Release.AspNetCompiler.PhysicalPath = "D:\Work\Web\UmcBlog\Web\"
+		Release.AspNetCompiler.TargetPath = "C:\Documents and Settings\Administrator\My Documents\Visual Studio 2005\Projects\localhost\PrecompiledWeb\localhost:9090\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		SlnRelativePath = "D:\Work\Web\UmcBlog\Web\"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Umc.Core", "Umc.Core\Umc.Core.csproj", "{7DC0386D-4A98-452A-BAED-6985BCB64952}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|.NET = Debug|.NET
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Release|.NET = Release|.NET
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{437C7762-43B2-4306-B3CF-8EF73DA19397}.Debug|.NET.ActiveCfg = Debug|.NET
+		{437C7762-43B2-4306-B3CF-8EF73DA19397}.Debug|.NET.Build.0 = Debug|.NET
+		{437C7762-43B2-4306-B3CF-8EF73DA19397}.Debug|Any CPU.ActiveCfg = Debug|.NET
+		{437C7762-43B2-4306-B3CF-8EF73DA19397}.Debug|Mixed Platforms.ActiveCfg = Debug|.NET
+		{437C7762-43B2-4306-B3CF-8EF73DA19397}.Debug|Mixed Platforms.Build.0 = Debug|.NET
+		{437C7762-43B2-4306-B3CF-8EF73DA19397}.Release|.NET.ActiveCfg = Debug|.NET
+		{437C7762-43B2-4306-B3CF-8EF73DA19397}.Release|.NET.Build.0 = Debug|.NET
+		{437C7762-43B2-4306-B3CF-8EF73DA19397}.Release|Any CPU.ActiveCfg = Debug|.NET
+		{437C7762-43B2-4306-B3CF-8EF73DA19397}.Release|Mixed Platforms.ActiveCfg = Debug|.NET
+		{437C7762-43B2-4306-B3CF-8EF73DA19397}.Release|Mixed Platforms.Build.0 = Debug|.NET
+		{7DC0386D-4A98-452A-BAED-6985BCB64952}.Debug|.NET.ActiveCfg = Debug|Any CPU
+		{7DC0386D-4A98-452A-BAED-6985BCB64952}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7DC0386D-4A98-452A-BAED-6985BCB64952}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7DC0386D-4A98-452A-BAED-6985BCB64952}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{7DC0386D-4A98-452A-BAED-6985BCB64952}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{7DC0386D-4A98-452A-BAED-6985BCB64952}.Release|.NET.ActiveCfg = Release|Any CPU
+		{7DC0386D-4A98-452A-BAED-6985BCB64952}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7DC0386D-4A98-452A-BAED-6985BCB64952}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7DC0386D-4A98-452A-BAED-6985BCB64952}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{7DC0386D-4A98-452A-BAED-6985BCB64952}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
